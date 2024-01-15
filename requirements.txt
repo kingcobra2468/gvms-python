@@ -1,3 +1,2 @@
 grpcio==1.60.0
-pkg_resources==0.0.0
 protobuf==4.24.4
