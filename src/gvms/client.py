@@ -7,6 +7,12 @@ from gvms.exceptions import GVMSRequestException
 
 class GVMSClient:
     def __init__(self, host, port) -> None:
+        """Constructor.
+
+        Args:
+            host (str): the GVMS server host.
+            port (_type_): the GVMS server port.
+        """
         self._host = host
         self._port = port
 
