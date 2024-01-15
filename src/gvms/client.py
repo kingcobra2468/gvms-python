@@ -38,9 +38,8 @@ class GVMSClient:
 
         return resp.recipient_phone_numbers
 
-    def get_gvoice_numbers(self, gvoice_phone_number, recipient_phone_number, message):
-        resp = self._stub.SendSMS(gvoice_pb2.FetchGVoiceNumbersRequest(
-            gvoice_phone_number=gvoice_phone_number, recipient_phone_number=recipient_phone_number, message=message))
+    def get_gvoice_numbers(self):
+        resp = self._stub.GetGVoiceNumbers()
 
         if not resp.success:
             raise GVMSRequestException(resp.error)
