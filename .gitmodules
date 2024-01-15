@@ -1,0 +1,3 @@
+[submodule "src/gvms/proto/api"]
+	path = src/gvms/proto/api
+	url = git@github.com:kingcobra2468/gvms-api.git
