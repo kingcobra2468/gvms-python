@@ -39,7 +39,7 @@ class GVMSClient:
         return resp.recipient_phone_numbers
 
     def get_gvoice_numbers(self):
-        resp = self._stub.GetGVoiceNumbers()
+        resp = self._stub.GetGVoiceNumbers(gvoice_pb2.FetchGVoiceNumbersRequest())
 
         if not resp.success:
             raise GVMSRequestException(resp.error)
